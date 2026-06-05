@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fernandes Computer Services</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:#003366;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+    background-size:cover;
+    background-position:center;
+    height:80vh;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#00aaff;
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+section{
+    padding:60px 40px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#003366;
+    font-size:36px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.service-box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.service-box:hover{
+    transform:translateY(-5px);
+}
+
+.service-box h3{
+    color:#0066cc;
+    margin-bottom:10px;
+}
+
+.about{
+    background:white;
+    text-align:center;
+}
+
+.contact{
+    background:#eef4fa;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    background:#0066cc;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Fernandes  Computers  Services</div>
+    <div class="logo">Feira Alto, Balkrishna Bhosale Marg, Road, Dangui Colony, Mapusa, Goa 403507</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Fernandes Computer Services</h1>
+    <p>Windows Support • Networking • Printers • Wi-Fi • Software Installation</p>
+    <a href="#contact" class="btn">Request Support</a>
+</section>
+
+<section id="services">
+    <h2 class="title">Our IT Services</h2>
+
+    <div class="services">
+
+        <div class="service-box">
+            <h3>🖥 Windows Support</h3>
+            <p>
+                Windows installation, updates, troubleshooting,
+                blue screen errors, performance optimization and user support.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>🌐 Network Support</h3>
+            <p>
+                LAN/WAN setup, IP configuration, network troubleshooting,
+                router and switch support.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>📶 Wi-Fi Troubleshooting</h3>
+            <p>
+                Resolve connectivity issues, weak signals,
+                Wi-Fi setup and wireless optimization.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>🖨 Printer Support</h3>
+            <p>
+                Printer installation, driver setup,
+                network printer configuration and repair assistance.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>💾 Software Installation</h3>
+            <p>
+                Install Microsoft Office, antivirus,
+                accounting software, browsers and business applications.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>🔒 Security Solutions</h3>
+            <p>
+                Antivirus setup, malware removal,
+                firewall configuration and security checks.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="title">About Us</h2>
+
+    <p style="max-width:900px;margin:auto;font-size:18px;">
+        We provide professional IT support for home users,
+        offices and small businesses. Our experienced technicians
+        help solve Windows, networking, Wi-Fi, printer and software issues
+        quickly and efficiently both onsite and remotely.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="title">Contact Support</h2>
+
+    <form id="supportForm">
+        <input type="text" placeholder="Full Name" required>
+
+        <input type="email" placeholder="Email Address" required>
+
+        <input type="tel" placeholder="Phone Number" required>
+
+        <input type="text" placeholder="Issue Type (Windows, Printer, Wi-Fi, etc.)" required>
+
+        <textarea rows="5" placeholder="Describe your issue"></textarea>
+
+        <button type="submit">Submit Support Request</button>
+    </form>
+</section>
+
+<footer>
+    <h3>Fernandes Computer Services</h3>
+    <h3>Feira Alto, Balkrishna Bhosale Marg, Road, Dangui Colony, Mapusa, Goa 403507</h3>
+    <p>Windows | Networking | Printer | Wi-Fi | Software Installation</p>
+    <p>Email: andrewfernandes@myyahoo.com</p>
+    <p>Phone: +91 7208826638</p>
+    <p>&copy; 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+document.getElementById("supportForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    alert(
+        "Thank you for contacting IT Support Pro.\n\n" +
+        "Your support request has been submitted successfully."
+    );
+
+    this.reset();
+});
+</script>
+
+</body>
+</html>
